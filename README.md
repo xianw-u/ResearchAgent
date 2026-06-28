@@ -123,20 +123,3 @@ LLM_PROVIDER=OpenAI-compatible
 ```env
 LLM_PROVIDER=Anthropic-compatible
 ```
-
-请不要把真实 API Key 提交到 GitHub。
-
-## 简历写法参考
-
-- 设计并实现 ResearchAgent 科研实验辅助系统，覆盖论文检索问答、训练日志诊断、MMSeg 配置静态分析和复现实验审计报告生成等流程。
-- 使用 FastAPI 封装核心算法能力，设计文件上传接口、Pydantic 响应模型、统一异常处理和 OpenAPI 文档，使项目具备服务化部署能力。
-- 基于 PyMuPDF 与 TF-IDF 实现无外部依赖的论文本地检索，并在问答结果中提供页码级证据来源，提升回答可解释性。
-- 使用 pandas 和 matplotlib 解析训练日志、提取关键指标、判断训练趋势，并自动生成结构化诊断结论。
-- 通过静态解析方式检查 MMSegmentation 配置文件，在不执行用户代码的前提下识别类别数、数据路径、学习率、优化器、pipeline 等潜在问题。
-
-## 后续优化方向
-
-- 接入 embedding 模型、FAISS 或 Chroma，提升论文语义检索效果。
-- 增加任务队列和持久化存储，支持更大文件和异步分析。
-- 增加 React 前端或 Ant Design 管理界面，形成更完整的前后端分离项目。
-- 增加 Dockerfile、CI 测试和在线部署示例，进一步增强工程展示效果。
